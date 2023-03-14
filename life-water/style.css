@@ -1,3 +1,6 @@
+body {
+    background: url(im);
+}
 :root {
     --lightskyblue:#87CEFA
 
@@ -6,11 +9,12 @@
 {
     margin:0; padding:0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: none;borde;
+    font-family:'Times New Roman', Times, serif;
+    outline: none,borde;
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+    box-sizing: border-box;
 }
 
 html {
@@ -33,25 +37,38 @@ header {
 
 }
 
+
 header .logo {
     font-size: 5rem;
     color:#800080;
     font-weight: bolder;
     
+    
 
 }
 header .logo span{
-    color:var(--pink);
+    color: var(--pink);
 
 }
+
+
 header .menu a{
     font-size:1.8rem;
     color:black;
-    margin-left: 1.5rem;
+    padding:10px 30px ;
+    position: relative;
     
 }
+
+
+
 header .menu a:hover{
     color:var(--pink)
+}
+
+header .dropdow_menu{
+    display: block;
+    position: absolute;
 }
 
 header .icons a{
@@ -70,4 +87,16 @@ header  .fa-bars{
     border-radius:1.5rem;
     padding: 5rem 1.5rem;
     cursor: pointe;
+}
+
+@media(max-widh:852px){
+    .fa-bars{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+
+
+    }
 }
