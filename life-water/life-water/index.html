@@ -1,61 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Life LiFeWaTeR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/ic.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>LIFE WATER</title>
+
+</head>
+<body>
+  <nav class="navbar">
+    <ul class=" nav-links">
+      <h1 class="logo">INFORMATE</h1>
+      <li><a href="#"></a>agua</li>
+      <li class="active"><a href="#" class=""></a>Tips</li>
+      <li><a href="#"></a>Informacion</li>
+      <li class="ctn"><a href="#" ></a>Kids</li>
+
+    </ul>
+    <img src="css/img/menu.png" alt="" class="menu-btn">
     
+  </nav>
+  
+    
+    <header>
+       <div class="header-content"> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 > Cuida tu futuro, cuida el agua</h2>
+        <div class="line"></div>
+        <h1> LIFE WATER</h1>
+        <a href="#" class="ctn">vida</a>
 
-
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+       </div>
+    </header>
+    <section>
+      <div class="title">
+        <h1>CALENTAMIENTO      GLOBAL</h1>
+        <div class="line"></div>
+        <br>
+      </div>
+             
         </div>
-      </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-  </body>
+        <div class="row">
+          <div class="col">
+            <img src="css/img/global.jpg" alt="">
+            <p>Se estima que actualmente es 1,1 °C superior a la media de
+              la etapa preindustrial (1850–1900). Y lo más preocupante, 
+              existe alrededor de un 20% de probabilidad de que la
+              temperatura media global supere temporalmente los 1,5 °C 
+              por encima del nivel preindustrial en el período comprendido 
+              entre 2020 y 2024.
+
+              En consecuencia, el cambio climático inducido por 
+              el hombre está afectando a los sistemas de sustentación 
+              de la vida, que van desde la cima de las montañas hasta 
+              las profundidades de los océanos, lo que provoca diferentes 
+              efectos en cascada para los ecosistemas y la seguridad humana 
+              como:
+
+              Deshielo del Ártico y aumento del nivel del mar
+              
+              Acidificación del océano y pérdida de biodiversidad mar</p>
+               
+          </div>
+      </div>
+    </section>
+    <script>
+      const menuBtn = document.querySelector('.menu-btn')
+      const navlinks = document.querySelector('.nav-links')
+
+      menuBtn.addEventListener('click',()=>{
+        navlinks.classlist.toggle('mobile-menu')
+      })
+    </script>
+
+</body>
 </html>
